@@ -1,0 +1,15 @@
+.localization-report { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; padding-block: 100px; }
+.localization-copy h2 { font-size: clamp(2rem, 4.5vw, 3.8rem); line-height: 1.05; letter-spacing: -.045em; margin: 10px 0 24px; }
+.localization-copy p:last-child { color: var(--muted); font-size: 1.08rem; }
+.localization-form { background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 32px; display: grid; gap: 20px; box-shadow: 0 22px 50px rgba(7, 27, 24, .07); }
+.localization-form label { display: grid; gap: 8px; font-weight: 700; }
+.localization-form input, .localization-form textarea { width: 100%; border: 1px solid #bfd0ca; border-radius: 12px; padding: 12px 14px; background: #fbfdfc; color: var(--ink); font: inherit; line-height: 1.45; resize: vertical; }
+.localization-form input:focus, .localization-form textarea:focus { border-color: #0a8f6b; outline: 3px solid rgba(22, 200, 148, .2); }
+.localization-form input[type="file"] { padding: 10px; }
+.localization-form small { color: var(--muted); font-weight: 500; }
+.localization-form .button { border: 0; font: inherit; cursor: pointer; justify-self: start; }
+.form-status { color: #08795b; font-weight: 650; margin: 0; min-height: 1.6em; }
+@media (max-width: 800px) {
+  .localization-report { grid-template-columns: 1fr; gap: 32px; padding-block: 70px; }
+  .localization-form { padding: 24px; border-radius: 20px; }
+}
